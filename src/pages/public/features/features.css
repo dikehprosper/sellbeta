@@ -1,0 +1,249 @@
+.ft-hero {
+  padding: 84px 0 40px;
+  background: linear-gradient(180deg, var(--brand-soft), transparent)
+}
+
+.ft-hero h1 {
+  font-size: clamp(40px, 6vw, 66px);
+  line-height: 1.05;
+  letter-spacing: -.03em;
+  font-weight: 900;
+  margin: 0 0 16px
+}
+
+.ft-hero h1 span {
+  color: var(--brand)
+}
+
+.ft-layout {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 48px
+}
+
+.ft-index {
+  position: sticky;
+  top: 96px;
+  align-self: start;
+  display: grid;
+  gap: 4px
+}
+
+.ft-index a {
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--mu)
+}
+
+.ft-index a:hover {
+  background: var(--brand-soft);
+  color: var(--brand)
+}
+
+.ft-list {
+  display: grid;
+  gap: 24px
+}
+
+.ft-card {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 32px;
+  align-items: center;
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--bg);
+  scroll-margin-top: 92px
+}
+
+.ft-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--brand-soft);
+  font-size: 24px;
+  margin-bottom: 14px
+}
+
+.ft-card h2 {
+  margin: 0 0 10px;
+  font-size: 26px;
+  letter-spacing: -.01em
+}
+
+.ft-card p {
+  margin: 0 0 16px;
+  color: var(--mu);
+  line-height: 1.6
+}
+
+.ft-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  font-size: 15px
+}
+
+.ft-card li {
+  padding-left: 26px;
+  position: relative
+}
+
+.ft-card li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--brand);
+  font-weight: 800
+}
+
+.ft-vis {
+  background: var(--bg2);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  display: grid;
+  gap: 12px
+}
+
+.ft-file {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px
+}
+
+.ft-file span {
+  font-size: 28px
+}
+
+.ft-file small {
+  display: block;
+  color: var(--mu)
+}
+
+.ft-row, .ft-lesson {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px
+}
+
+.ft-row em, .ft-lesson i {
+  font-style: normal;
+  color: var(--brand);
+  font-weight: 800
+}
+
+.ft-row i {
+  font-style: normal;
+  color: var(--brand);
+  font-weight: 700;
+  font-size: 13px
+}
+
+.ft-arrow {
+  text-align: center;
+  color: var(--brand);
+  font-weight: 900
+}
+
+.ft-bar {
+  height: 8px;
+  border-radius: 99px;
+  background: var(--line);
+  overflow: hidden
+}
+
+.ft-bar div {
+  width: 35%;
+  height: 100%;
+  background: var(--brand)
+}
+
+.ft-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px
+}
+
+.ft-grid div {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background: var(--brand-soft);
+  border: 1px solid var(--line)
+}
+
+.ft-link {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--mu);
+  justify-self: start
+}
+
+.ft-sample {
+  color: var(--mu);
+  font-size: 12px
+}
+
+.ft-alt {
+  background: var(--bg2)
+}
+
+.ft-cta {
+  text-align: center
+}
+
+.ft-cta .mk-lead {
+  margin: 0 auto 26px
+}
+
+.ft-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center
+}
+
+@media(max-width:900px) {
+  .ft-layout {
+    grid-template-columns: 1fr;
+    gap: 20px
+  }
+
+  .ft-index {
+    position: static;
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding-bottom: 4px
+  }
+
+  .ft-index a {
+    white-space: nowrap;
+    border: 1px solid var(--line)
+  }
+
+  .ft-card {
+    grid-template-columns: 1fr;
+    padding: 24px
+  }
+}

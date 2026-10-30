@@ -6,11 +6,13 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import clientStore, { persistor } from "./redux/store/clientStore";
 import ProtectedRoute from "./components/wrappers/guards/ProtectedRoute";
-import Landing from "./pages/landing/Landing";
+import Landing from "./pages/public/landing/Landing";
+import HowItWorks from "./pages/public/howitworks/HowItWorks";
+import Features from "./pages/public/features/Features";
 import PublicGuard from "./components/wrappers/guards/PublicRoute";
 import ForgotPassword from "./pages/auth/ForgotPassword";
 import ResetPassword from "./pages/auth/ResetPassword";
-import Dashboard from "./pages/dashboard/Dashboard";
+import Dashboard from "./pages/guarded/dashboard/Dashboard";
 import { ModalProvider } from "./context/ModalProvider";
 import { ToastProvider } from "./context/ToastProvider";
 import DashboardWrapper from "./components/wrappers/DashBoardWrapper";
@@ -38,6 +40,8 @@ function App() {
                       <Landing />
                     </PublicGuard>
                   } />
+                  <Route path="/how-it-works" element={<HowItWorks />} />
+                  <Route path="/features" element={<Features />} />
                   <Route path="/login" element={
                     <PublicGuard>
                       <Login />

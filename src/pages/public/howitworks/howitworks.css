@@ -1,0 +1,286 @@
+.hw-hero {
+  padding: 84px 0 40px;
+  background: linear-gradient(180deg, var(--brand-soft), transparent)
+}
+
+.hw-hero h1 {
+  font-size: clamp(36px, 5.5vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -.03em;
+  font-weight: 900;
+  max-width: 760px;
+  margin: 0 0 16px
+}
+
+.hw-hero h1 span {
+  color: var(--brand)
+}
+
+.hw-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center
+}
+
+.hw-tabs {
+  display: grid;
+  gap: 12px
+}
+
+.hw-tab {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  text-align: left;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit
+}
+
+.hw-tab>b {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg2);
+  font-size: 18px
+}
+
+.hw-tab p {
+  margin: 6px 0 0;
+  color: var(--mu);
+  font-size: 14px;
+  line-height: 1.5
+}
+
+.hw-tab.on {
+  border-color: var(--brand);
+  background: var(--brand-soft)
+}
+
+.hw-tab.on>b {
+  background: var(--brand);
+  color: #fff
+}
+
+.hw-panel {
+  background: var(--bg2);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 28px;
+  min-height: 360px;
+  display: grid;
+  align-items: center
+}
+
+.hw-mock {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  display: grid;
+  gap: 14px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, .1)
+}
+
+.hw-field small, .hw-price small {
+  display: block;
+  color: var(--mu);
+  font-size: 12px;
+  margin-bottom: 4px
+}
+
+.hw-field div {
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--bg2)
+}
+
+.hw-fake {
+  text-align: center;
+  pointer-events: none
+}
+
+.hw-drop {
+  border: 2px dashed var(--line);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  color: var(--mu)
+}
+
+.hw-price em {
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--brand)
+}
+
+.hw-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: var(--bg2)
+}
+
+.hw-link i {
+  font-style: normal;
+  color: var(--brand);
+  font-weight: 700
+}
+
+.hw-toast {
+  background: var(--brand);
+  color: #fff;
+  border-radius: 999px;
+  padding: 10px 16px;
+  justify-self: start;
+  font-size: 14px
+}
+
+.hw-alt {
+  background: var(--bg2)
+}
+
+.hw-kinds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 32px
+}
+
+.hw-kind {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 22px;
+  border-radius: 16px;
+  background: var(--bg);
+  border: 1px solid var(--line)
+}
+
+.hw-kind>span {
+  font-size: 28px;
+  line-height: 1
+}
+
+.hw-kind h3, .hw-journey h3 {
+  margin: 0 0 6px;
+  font-size: 18px
+}
+
+.hw-kind p, .hw-journey p {
+  margin: 0;
+  color: var(--mu);
+  line-height: 1.5;
+  font-size: 15px
+}
+
+.hw-journey {
+  list-style: none;
+  padding: 0;
+  margin: 36px 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px
+}
+
+.hw-journey li {
+  border-top: 3px solid var(--brand);
+  padding-top: 18px
+}
+
+.hw-journey span {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 12px
+}
+
+.hw-band {
+  background: var(--dark);
+  color: #fff;
+  padding: 80px 0
+}
+
+.hw-band .mk-lead {
+  color: #cfc4c0
+}
+
+.hw-band-in {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center
+}
+
+.hw-needs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px
+}
+
+.hw-needs li {
+  padding: 14px 18px 14px 48px;
+  border: 1px solid #5a2a2e;
+  border-radius: 12px;
+  position: relative;
+  font-weight: 600
+}
+
+.hw-needs li:before {
+  content: "✓";
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  background: var(--brand);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 13px
+}
+
+.hw-cta {
+  text-align: center
+}
+
+.hw-cta .mk-lead {
+  margin: 0 auto 26px
+}
+
+@media(max-width:860px) {
+  .hw-steps, .hw-band-in {
+    grid-template-columns: 1fr
+  }
+
+  .hw-journey {
+    grid-template-columns: 1fr 1fr
+  }
+}
+
+@media(max-width:520px) {
+  .hw-journey {
+    grid-template-columns: 1fr
+  }
+}
